@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+.deset {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+footer {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+}

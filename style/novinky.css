@@ -1,0 +1,83 @@
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.fatws {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.644), rgba(255, 0, 0, 0)), url(../img/fatws.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 76px);
+}
+
+.wrapper {
+  text-align: right;
+  padding-top: 25%;
+  padding-right: 10%;
+}
+
+#fatws {
+  padding-top: 1%;
+}
+
+.wv {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.644), rgba(255, 0, 0, 0)), url(../img/wv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper2 {
+  padding-top: 20%;
+  padding-left: 3%;
+}
+
+#wv {
+  padding-top: 1%;
+}
+
+.ffh {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.644), rgba(255, 0, 0, 0)), url(../img/ffh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper3 {
+  text-align: right;
+  padding-top: 20%;
+  padding-right: 3%;
+}
+
+#ffh {
+  padding-top: 1%;
+}
+
+.endgame {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.644), rgba(255, 0, 0, 0)), url(../img/endgame.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper4 {
+  padding-top: 30%;
+  padding-left: 3%;
+}
+
+#endgame {
+  padding-top: 1%;
+}

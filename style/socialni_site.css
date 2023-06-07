@@ -1,0 +1,95 @@
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  flex-direction: row;
+}
+
+.stred {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  flex-direction: row;
+}
+
+.ig img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.ig a {
+  padding-left: 10px;
+  padding-right: 10em;
+}
+
+.fb img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.fb a {
+  padding-left: 10px;
+  padding-right: 10em;
+}
+
+.tw img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.tw a {
+  padding-left: 10px;
+}
+
+footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 100% !important;
+}
+
+@media(max-width: 1218px) {
+  .stred {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .ig a {
+    padding-right: 0;
+  }
+
+  .fb a {
+    padding-right: 0;
+  }
+
+  .fb {
+    padding-top: 10px;
+  }
+
+  .tw {
+    padding-top: 10px;
+  }
+}

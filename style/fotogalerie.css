@@ -1,0 +1,147 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.filmy img {
+  width: 674px;
+  height: 1000px;
+}
+
+.serialy img {
+  width: 674px;
+  height: 1000px;
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  max-width: 724px;
+}
+
+.cards {
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  max-width: 724px;
+}
+
+.container {
+  text-align: center;
+}
+
+.avengers img {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.av12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.av34 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.ironman {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ironman img {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.camerica {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.camerica img {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.thor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.thor img {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.serial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.serial img {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media(max-width: 2188px) {
+  .ironman {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .camerica {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thor {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 1548px) {
+  .av12 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .av34 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serial {
+    flex-direction: column;
+    align-items: center;
+  }
+}

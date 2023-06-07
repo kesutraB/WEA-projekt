@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  font-size: 150%;
+  color: white;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(120, 120, 120);
+}
+
+header {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 220px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#username {
+  margin-left: 20px;
+}
+
+.odkaz {
+  list-style: none;
+}
+
+.odkaz a {
+  list-style: none;
+  color: white;
+}
+
+.odkaz li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.odkaz li a {
+  text-decoration: none;
+}
+
+.odkaz a:hover {
+  color: red;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.dole {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media(max-width: 995px) {
+  header {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .odkaz li {
+    display: block;
+    text-align: center;
+  }
+
+  .odkaz ul {
+    text-align: center;
+  }
+
+}

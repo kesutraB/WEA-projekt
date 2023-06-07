@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<?php
+session_start();
+?>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="img/mcu.ico" />
+  <link rel="stylesheet" href="style/onas.css">
+  <link rel="stylesheet" href="style/header.css">
+  <title>PROJEKTY</title>
+</head>
+
+<body>
+  <?php require("./view/header.phtml"); ?>
+  <table>
+    <tr>
+      <th colspan="3"><b>vydané filmy</b></th>
+    </tr>
+    <tr>
+      <th><b>název</b></th>
+      <th><b>datum vydání</b></th>
+      <th><b>fáze</b></th>
+    </tr>
+    <tr>
+      <td>Iron Man</td>
+      <td>2. května 2008</td>
+      <td rowspan="6">první</td>
+    </tr>
+    <tr>
+      <td>The Incredible Hulk</td>
+      <td>13. června 2008</td>
+    </tr>
+    <tr>
+      <td>Iron Man 2</td>
+      <td>7. května 2010</td>
+    </tr>
+    <tr>
+      <td>Thor</td>
+      <td>6. května 2011</td>
+    </tr>
+    <tr>
+      <td>Captain America: The First Avenger</td>
+      <td>22. července 2011</td>
+    </tr>
+    <tr>
+      <td>Marvel's The Avengers</td>
+      <td>4. května 2012</td>
+    </tr>
+    <tr>
+      <td>Iron Man 3</td>
+      <td>3. května 2013</td>
+      <td rowspan="6">druhá</td>
+    </tr>
+    <tr>
+      <td>Thor: The Dark World</td>
+      <td>8. listopadu 2013</td>
+    </tr>
+    <tr>
+      <td>Captain America: The Winter Soldier</td>
+      <td>4. dubna 2014</td>
+    </tr>
+    <tr>
+      <td>Guardians of the Galaxy</td>
+      <td>1. srpna 2014</td>
+    </tr>
+    <tr>
+      <td>Avengers: Age of Ultron</td>
+      <td>1.května 2015</td>
+    </tr>
+    <tr>
+      <td>Ant-Man</td>
+      <td>17. července 2015</td>
+    </tr>
+    <tr>
+      <td>Captain America: Civil War</td>
+      <td>6. května 2016</td>
+      <td rowspan="11">třetí</td>
+    </tr>
+    <tr>
+      <td>Doctor Strange</td>
+      <td>4. listopadu 2016</td>
+    </tr>
+    <tr>
+      <td>Guardians of the Galaxy vol. 2</td>
+      <td>5. května 2017</td>
+    </tr>
+    <tr>
+      <td>Spider-Man: Homecoming</td>
+      <td>7. července 2017</td>
+    </tr>
+    <tr>
+      <td>Thor: Ragnarok</td>
+      <td>3. listopadu 2017</td>
+    </tr>
+    <tr>
+      <td>Black Panther</td>
+      <td>16. února 2018</td>
+    </tr>
+    <tr>
+      <td>Avengers: Infinity War</td>
+      <td>27. dubna 2018</td>
+    </tr>
+    <tr>
+      <td>Ant-Man and the Wasp</td>
+      <td>6. července 2018</td>
+    </tr>
+    <tr>
+      <td>Captain Marvel</td>
+      <td>8. března 2019</td>
+    </tr>
+    <tr>
+      <td>Avengers: Endgame</td>
+      <td>26. dubna 2019</td>
+    </tr>
+    <tr>
+      <td>Spider-Man: Far from Home</td>
+      <td>2. července 2019</td>
+    </tr>
+    <tr>
+      <th colspan="3"><b>plánované filmy</b></th>
+    </tr>
+    <tr>
+      <td>Black Widow</td>
+      <td>9. července 2021</td>
+      <td rowspan="11">čtvrtá</td>
+    </tr>
+    <tr>
+      <td>Shang-Chi and the Legend of the Ten Rings</td>
+      <td>3. září 2021</td>
+    </tr>
+    <tr>
+      <td>Eternals</td>
+      <td>5. listopadu 2021</td>
+    </tr>
+    <tr>
+      <td>Spider-Man: No Way Home</td>
+      <td>17. prosince 2021</td>
+    </tr>
+    <tr>
+      <td>Doctor Strange in the Multiverse of Madness</td>
+      <td>25. března 2022</td>
+    </tr>
+    <tr>
+      <td>Thor: Love and Thunder</td>
+      <td>6. května 2022</td>
+    </tr>
+    <tr>
+      <td>Black Panther: Wakanda Forever</td>
+      <td>8. července 2022</td>
+    </tr>
+    <tr>
+      <td>The Marvels</td>
+      <td>11. listopadu 2022</td>
+    </tr>
+    <tr>
+      <td>Blade</td>
+      <td>bude oznámeno</td>
+    </tr>
+    <tr>
+      <td>Ant-Man and The Wasp: Quantumania</td>
+      <td>17. února 2023</td>
+    </tr>
+    <tr>
+      <td>Fantastic Four</td>
+      <td>bude oznámeno</td>
+    </tr>
+    <tr>
+      <th colspan="3"><b>Disney+</b></th>
+    </tr>
+    <tr>
+      <th><b>název</b></th>
+      <th><b>první epizoda</b></th>
+      <th><b>poslední epizoda</b></th>
+    </tr>
+    <tr>
+      <td>Marvel Studios: Legends</td>
+      <td>8. ledna 2021</td>
+      <td>12. února 2021</td>
+    </tr>
+    <tr>
+      <td>WandaVision</td>
+      <td>15. ledna 2021</td>
+      <td>5. března 2021</td>
+    </tr>
+    <tr>
+      <td>The Falcon and the Winter Soldier</td>
+      <td>19. března 2021</td>
+      <td>23. dubna 2021</td>
+    </tr>
+    <tr>
+      <td>Loki</td>
+      <td>9. června 2021</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>What If...?</td>
+      <td>léto 2021</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Ms. Marvel</td>
+      <td>podzim 2021</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Hawkeye</td>
+      <td>2021</td>
+      <td>...</td>
+    </tr>
+  </table>
+  <footer>
+    <ul class="odkaz">
+      <li>Matěj Bartusek, m.bartusek.st@spseiostrava<a href="img/tf.jpg" target="_blank">.</a>cz, 13. 6. 2022</li>
+    </ul>
+    <ul class="odkaz">
+      <li><a href="#top">ZPÁTKY NAHORU</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

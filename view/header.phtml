@@ -1,0 +1,25 @@
+<header id="top">
+  <div class="left">
+    <img src="img/LOGO1.png" alt="logo studia" class="logo">
+    <?php
+    if (isset($_SESSION['user'])) {
+      echo '<div id="username">Přihlášen jako: ' . $_SESSION["user"]["name"] . '</div>';
+    }
+    ?>
+  </div>
+  <ul class="odkaz">
+    <li><a href="index.php">ÚVOD</a></li>
+    <li><a href="onas.php">PROJEKTY</a></li>
+    <li><a href="novinky.php">NOVINKY</a></li>
+    <li><a href="socialni_site.php">SOCIÁLNÍ SÍTĚ</a></li>
+    <?php
+    if (isset($_SESSION['user'])) {
+      echo '<li><a href="fotogalerie.php">FOTOGALERIE</a></li>';
+      echo '<li><a href="logoff.php">ODHLÁSIT SE</a></li>';
+    } else {
+      echo '<li><a href="login.php">PŘIHLÁSIT SE</a></li>';
+      echo '<li><a href="register.php">REGISTROVAT</a></li>';
+    }
+    ?>
+  </ul>
+</header>
