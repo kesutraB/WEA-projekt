@@ -111,37 +111,3 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-@media(max-width: 2188px) {
-  .ironman {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .camerica {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .thor {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media(max-width: 1548px) {
-  .av12 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .av34 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .serial {
-    flex-direction: column;
-    align-items: center;
-  }
-}
