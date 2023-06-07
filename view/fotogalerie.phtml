@@ -11,6 +11,7 @@ session_start();
   <link rel="shortcut icon" type="image/jpg" href="img/mcu.ico" />
   <link rel="stylesheet" href="style/fotogalerie.css">
   <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/footer.css">
   <title>FOTOGALERIE</title>
 </head>
 
@@ -130,14 +131,7 @@ session_start();
       </div>
     </div>
   </div>
-  <footer>
-    <ul class="odkaz">
-      <li>Matěj Bartusek, m.bartusek.st@spseiostrava<a href="img/tf.jpg" target="_blank">.</a>cz, 13. 6. 2022</li>
-    </ul>
-    <ul class="odkaz">
-      <li><a href="#top">ZPÁTKY NAHORU</a></li>
-    </ul>
-  </footer>
+  <?php require("./view/footer.phtml"); ?>
 </body>
 
 </html>

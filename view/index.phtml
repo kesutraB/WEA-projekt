@@ -11,6 +11,7 @@ session_start();
   <link rel="shortcut icon" type="image/jpg" href="img/mcu.ico" />
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/footer.css">
   <title>MCU</title>
 </head>
 
@@ -28,11 +29,7 @@ session_start();
   <p>Jon Favreau</p>
   <p>Stan Lee</p>
   <img src="img/marvel10y.jpg" alt="Marvel 10 let foto" class="deset">
-  <footer>
-    <ul class="odkaz">
-      <li>Matěj Bartusek, m.bartusek.st@spseiostrava<a href="img/tf.jpg" target="_blank">.</a>cz, 13. 6. 2022</li>
-    </ul>
-  </footer>
+  <?php require("./view/footer.phtml"); ?>
 </body>
 
 </html>
