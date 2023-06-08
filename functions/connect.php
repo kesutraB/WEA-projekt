@@ -24,3 +24,4 @@
 
   $db = new DBConnect("localhost", "root", "", "i2c_zwa");
   $db->connect();
+?>

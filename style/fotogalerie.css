@@ -59,55 +59,9 @@ a {
   padding-top: 2%;
 }
 
-.ironman {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.ironman img {
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.camerica {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.camerica img {
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.thor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.thor img {
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .serial {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 2%;
-}
-
-.serial img {
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
 }
