@@ -18,31 +18,39 @@ session_start();
 <body>
   <?php require("./view/header.phtml"); ?>
   <h1>Filmy</h1>
-  <?php 
-  foreach ($movies as $movie) {
-  ?>
-  <div class="ironman">
-    <div class="card">
-        <div class="container">
-          <h3><?= $movie["name"] ?></h3>
+    <?php 
+    $cols = -1;
+    foreach ($movies as $movie) { 
+      if ($cols == 3 && $cols != -1) {
+        $cols = 0; ?>
         </div>
-        <img src="./img/uploaded/<?= $movie["img"] ?>" alt="plakát pro <?= $movie["name"] ?>" width="674px" height="1000px">
+        <div class="group">
+    <?php } else if ($cols == -1) { 
+        $cols = 0; ?>
+        <div class="group"> 
+    <?php } ?>
+
+    <div class="card">
+      <div class="container">
+        <h3><?= $movie["name"] ?></h3>
       </div>
+      <img src="./img/uploaded/<?= $movie["img"] ?>" alt="plakát pro <?= $movie["name"] ?>" width="674px" height="1000px">
     </div>
-  <?php } ?>
+    <?php $cols += 1; } ?>
+  </div>
+  </div>
   <h1>Seriály</h1>
-  <?php 
-  foreach ($tvseries as $series) {
-  ?>
-  <div class="ironman">
+  <div class="group">
+    <?php foreach ($tvseries as $series) { ?>
     <div class="card">
-        <div class="container">
-          <h3><?= $series["name"] ?></h3>
-        </div>
-        <img src="./img/uploaded/<?= $series["img"] ?>" alt="plakát pro <?= $series["name"] ?>" width="674px" height="1000px">
+      <div class="container">
+        <h3><?= $series["name"] ?></h3>
       </div>
+      <img src="./img/uploaded/<?= $series["img"] ?>" alt="plakát pro <?= $series["name"] ?>" width="674px" height="1000px">
     </div>
-  <?php } require("./view/footer.phtml"); ?>
+    <?php } ?>
+  </div>
+  <?php require("./view/footer.phtml"); ?>
 </body>
 
 </html>
