@@ -25,13 +25,21 @@
 
                   <h2 class="fw-bold mb-2">PŘIDÁNÍ FILMU/SERIÁLU</h2>
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="name">Název filmu/seriálu</label>
+                    <label class="form-label" for="name">Název</label>
                     <input type="text" name="name" id="name" class="form-control form-control-lg">
                   </div>
 
                   <div class="form-outline mb-4">
+                    <label class="form-label" for="name">Vyber kategorii</label>
+                    <select name="category" id="category" class="form-control">
+                      <option value="movie">Film</option>
+                      <option value="tvseries">Seriál</option>
+                    </select>
+                  </div>
+
+                  <div class="form-outline mb-4">
                     <label class="form-label" for="password">Obrázek</label>
-                    <input type="file" name="obr" id="obr">
+                    <input type="file" name="obr" id="obr" class="form-control-file">
                   </div>
                   <button class="btn btn-outline-light btn-lg px-5" type="submit">Přidat</button>
                 </div>

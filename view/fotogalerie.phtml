@@ -18,10 +18,31 @@ session_start();
 <body>
   <?php require("./view/header.phtml"); ?>
   <h1>Filmy</h1>
-  <div class="filmy"></div>
+  <?php 
+  foreach ($movies as $movie) {
+  ?>
+  <div class="ironman">
+    <div class="card">
+        <div class="container">
+          <h3><?= $movie["name"] ?></h3>
+        </div>
+        <img src="./img/uploaded/<?= $movie["img"] ?>" alt="plakát pro <?= $movie["name"] ?>" width="674px" height="1000px">
+      </div>
+    </div>
+  <?php } ?>
   <h1>Seriály</h1>
-  <div class="serialy"></div>
-  <?php require("./view/footer.phtml"); ?>
+  <?php 
+  foreach ($tvseries as $series) {
+  ?>
+  <div class="ironman">
+    <div class="card">
+        <div class="container">
+          <h3><?= $series["name"] ?></h3>
+        </div>
+        <img src="./img/uploaded/<?= $series["img"] ?>" alt="plakát pro <?= $series["name"] ?>" width="674px" height="1000px">
+      </div>
+    </div>
+  <?php } require("./view/footer.phtml"); ?>
 </body>
 
 </html>
