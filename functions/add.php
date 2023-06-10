@@ -19,13 +19,13 @@ function add($info,$file, $tabulka, $db)
       ".gif" => "image/gif"
   ];
   if(in_array($file["obr"]["type"], $typy)) {
-    if ($file["obr"]["size"] <= 1000000) {
+    if ($file["obr"]["size"] <= 2000000) {
       move_uploaded_file(
       $file["obr"]["tmp_name"],
       "img/uploaded/" . $file["obr"]["name"] 
       );
       
-      $stmt = $db->prepare("INSERT INTO movie_gallery(name,img) VALUES (?,?)");
+      $stmt = $db->prepare("INSERT INTO $tabulka(name,img) VALUES (?,?)");
       $stmt->bind_param("ss", $info["name"],$file["obr"]["name"]);
       $stmt->execute();
       $stmt->close();
@@ -45,6 +45,7 @@ function add($info,$file, $tabulka, $db)
   }
 
   }
+  header("location: fotogalerie.php");
   }
 }
 ?>

@@ -7,7 +7,8 @@
     add($_POST,$_FILES, "movie_gallery",$PDO);
       
     }
-    }
     else if (isset($_POST["category"]) && $_POST["category"] == "tvseries") add($_POST,$_FILES, "tvseries_gallery",$PDO);
+    }
+    
   require ("./view/pridanifilmu.phtml");
 ?>
