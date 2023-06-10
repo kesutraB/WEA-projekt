@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<?php
+session_start();
+?>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="img/mcu.ico" />
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/administrace.css">
+  <title>ADMINISTRACE</title>
+</head>
+
+<body>
+  <?php 
+  require("./view/header.phtml"); 
+  ?>
+  <table>
+    <tr>
+      <th colspan="3"><b>Filmy</b></th>
+    </tr>
+    <tr>
+      <th><b>název</b></th>
+      <th><b>obrázek</b></th>
+      <th></th>
+    </tr>
+    <?php foreach ($movies as $movie) { ?>
+      <tr>
+        <td><?= $movie["name"] ?></td>
+        <td><?= $movie["img"] ?></td>
+        <td><a href="?delete=<?= $movie["id"] ?>&category=movie_gallery">vymazat</a></td>
+      </tr>
+    <?php } ?>
+    <tr>
+      <th colspan="3"><b>Seriály</b></th>
+    </tr>
+    <tr>
+      <th><b>název</b></th>
+      <th><b>obrázek</b></th>
+      <th></th>
+    </tr>
+    <?php foreach ($tvseries as $series) { ?>
+      <tr>
+        <td><?= $series["name"] ?></td>
+        <td><?= $series["img"] ?></td>
+        <td><a href="?delete=<?= $series["id"] ?>&category=tvseries_gallery">vymazat</a></td>
+      </tr>
+    <?php } ?>
+  </table>
+  <?php require("./view/footer.phtml"); ?>
+</body>
+
+</html>

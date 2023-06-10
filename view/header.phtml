@@ -15,8 +15,10 @@
     if (isset($_SESSION['user'])) {
       echo '<li><a href="fotogalerie.php">FOTOGALERIE</a></li>';
       echo '<li><a href="pridanifilmu.php">PŘIDAT FILM/SERIÁL</a></li>';
+      if ($_SESSION["user"]["name"] == "admin") echo '<li><a href="administrace.php">ADMINISTRACE</a></li>';
       echo '<li><a href="logoff.php">ODHLÁSIT SE</a></li>';
-    } else {
+    }
+    else {
       echo '<li><a href="login.php">PŘIHLÁSIT SE</a></li>';
       echo '<li><a href="register.php">REGISTROVAT</a></li>';
     }
